@@ -2391,7 +2391,8 @@ hr {
   background-color: #fff;
   color: #6b6872;
   border-radius: 4px;
-  box-shadow: 0 2px 12px rgba(95, 90, 104, 0.12);
+  box-shadow: 0 2px 12px rgba(95, 90, 104, 0.12); 
+  /* height: 200%; */
 }
 
 .card-page hr {
@@ -2400,6 +2401,11 @@ hr {
   margin-bottom: 24px;
   border-width: 2px;
   border-color: #F0EEF5;
+}
+
+
+img { 
+  max-width: 100%;
 }
 
 .ratings * {
@@ -2565,7 +2571,44 @@ hr {
 }
 
 
-.maps-container {
+
+.map-responsive{
+
+  overflow:hidden;
+
+  padding-bottom:56.25%;
+
+  position:relative;
+
+  height:0;
+
+}
+
+.map-responsive iframe{
+
+  left:0;
+
+  top:0;
+
+  height:100%;
+
+  width:100%;
+
+  position:absolute;
+
+}
+
+.map-wraper { 
+  max-width: 700px;  
+  /* border:  2px solid red; */
+}
+ 
+.googlemap { 
+  width:100%;
+}
+
+
+.maps-container #myMap{
   display: block;
   background-color: #E4E1EB;
   width: 100%;
@@ -2573,10 +2616,10 @@ hr {
   min-height: 500px;
 }
 
-.maps-container #myMap {
+/* .maps-container #myMap {
   height: 100%;
   min-height: 500px;
-}
+} */
 
 /* Teams */
 .team-item {
