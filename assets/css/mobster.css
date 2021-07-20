@@ -17,12 +17,16 @@
   --light: #f3845b;
   --gray: #6b6872;
   --white: #fff;
-  --font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+  --font-family: 'Raleway', Arial, Helvetica, sans-serif;
   --line-height: 1.7;
 
 }
 
 p { 
+  font-family: 'Raleway', sans-serif;
+} 
+
+h5 { 
   font-family: 'Raleway', sans-serif;
 }
 
